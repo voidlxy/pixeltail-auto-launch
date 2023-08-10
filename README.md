@@ -12,3 +12,8 @@
 
 目前后端开发基本完成，你们的怨种Developer正在努力实现下载MC的功能，当然还有制作图形化界面（毕竟给新人一个CMD大黑框子操作好像不太直观XD）
 
+#### 我们的理念
+
+官方没有的，社区来做！
+![PIXELTAIL社区欢迎您](src/main/resources/ptcm-icon-lighttheme.png)
+
