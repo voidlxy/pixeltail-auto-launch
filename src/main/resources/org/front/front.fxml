@@ -8,17 +8,18 @@
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-   <AnchorPane prefHeight="320.0" prefWidth="570.0">
+   <AnchorPane prefHeight="279.0" prefWidth="418.0">
       <VBox.margin>
          <Insets />
       </VBox.margin>
        <TabPane prefHeight="279.0" prefWidth="418.0" tabClosingPolicy="UNAVAILABLE">
            <Tab text="Home">
                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                   <TextField fx:id="UserName" layoutX="58.0" layoutY="2.0" prefWidth="274.0" text="UserName" />
+                   <TextField fx:id="UserName" layoutX="58.0" layoutY="8.0" prefWidth="274.0" text="UserName" />
                <Button layoutX="70.0" layoutY="126.0" onAction="#onHelloButtonClick" prefHeight="98.0" prefWidth="247.0" text="Start" />
-                   <TextField fx:id="PassWord" layoutX="58.0" layoutY="36.0" prefWidth="274.0" text="PassWord" />
-                   <TextField fx:id="Version" layoutX="58.0" layoutY="71.0" prefWidth="274.0" text="Version" />
+                   <TextField layoutX="58.0" layoutY="46.0" prefWidth="274.0" text="PassWord" />
+                   <TextField fx:id="Version" layoutX="58.0" layoutY="84.0" prefWidth="274.0" text="Version" />
+               <PasswordField fx:id="PassWord" layoutX="58.0" layoutY="46.0" prefWidth="274.0" />
                </AnchorPane>
            </Tab>
            <Tab text="Settings">

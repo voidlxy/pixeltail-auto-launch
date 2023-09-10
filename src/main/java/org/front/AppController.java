@@ -7,6 +7,7 @@ package org.front;
 //导入必要的依赖
 //------------------------------------------------------------------------------------
 import javafx.fxml.FXML;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import org.launcher.Main;
 import org.to2mbn.jmccc.launch.LaunchException;
@@ -21,7 +22,7 @@ public class AppController {
     //为控件创建字段
     //--------------------------------------------------------------------------------
     public TextField UserName;
-    public TextField PassWord;
+    public PasswordField PassWord;
     public TextField Version;
     public TextField RootDir;
     public TextField MaxMemory;

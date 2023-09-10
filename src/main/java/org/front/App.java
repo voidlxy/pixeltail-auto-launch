@@ -28,7 +28,7 @@ public class App extends Application {
         //配置fxml加载器并从front.xml加载控件布局
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("front.fxml"));
         //创建场景并加入布局
-        Scene scene = new Scene(fxmlLoader.load(), 570, 320);
+        Scene scene = new Scene(fxmlLoader.load(), 418, 279);
         //----------------------------------------------------------------------------
         //配置窗口设置
         //----------------------------------------------------------------------------
