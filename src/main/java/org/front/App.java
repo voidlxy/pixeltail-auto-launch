@@ -7,10 +7,12 @@ package org.front;
 //导入必要的依赖
 //------------------------------------------------------------------------------------
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+
+import java.io.IOException;
+
 //------------------------------------------------------------------------------------
 //声明App公共类
 //------------------------------------------------------------------------------------
@@ -19,16 +21,14 @@ public class App extends Application {
     //重写start方法
     //--------------------------------------------------------------------------------
     @Override
-    public void start(Stage stage) {
+    public void start(Stage stage) throws IOException {
         //----------------------------------------------------------------------------
         //配置窗口控件
         //----------------------------------------------------------------------------
-        //添加标签
-        Label label = new Label("PIXELTAIL一键启动");
-        //配置布局并加入控件
-        BorderPane pane = new BorderPane(label);
+        //配置fxml加载器并从front.xml加载控件布局
+        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("front.fxml"));
         //创建场景并加入布局
-        Scene scene = new Scene(pane, 854, 480);
+        Scene scene = new Scene(fxmlLoader.load(), 570, 320);
         //----------------------------------------------------------------------------
         //配置窗口设置
         //----------------------------------------------------------------------------

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.front.AppController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <AnchorPane prefHeight="320.0" prefWidth="570.0">
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+       <TabPane prefHeight="279.0" prefWidth="418.0" tabClosingPolicy="UNAVAILABLE">
+           <Tab text="Home">
+               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                   <TextField fx:id="UserName" layoutX="58.0" layoutY="2.0" prefWidth="274.0" text="UserName" />
+               <Button layoutX="70.0" layoutY="126.0" onAction="#onHelloButtonClick" prefHeight="98.0" prefWidth="247.0" text="Start" />
+                   <TextField fx:id="PassWord" layoutX="58.0" layoutY="36.0" prefWidth="274.0" text="PassWord" />
+                   <TextField fx:id="Version" layoutX="58.0" layoutY="71.0" prefWidth="274.0" text="Version" />
+               </AnchorPane>
+           </Tab>
+           <Tab text="Settings">
+               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                   <TextField fx:id="Height" layoutY="80.0" prefWidth="274.0" text="Height" />
+                   <TextField fx:id="Width" layoutY="52.0" prefWidth="274.0" text="Width" />
+                   <TextField fx:id="McRuntimeDir" layoutY="135.0" prefWidth="274.0" text="McRuntimeDir" />
+                   <TextField fx:id="JreDir" layoutY="108.0" prefWidth="274.0" text="JreDir" />
+                   <TextField fx:id="RootDir" prefWidth="274.0" text="RootDir" />
+                   <TextField fx:id="JavaAgent" layoutY="163.0" prefWidth="274.0" text="JavaAgent" />
+                   <TextField fx:id="MaxMemory" layoutY="26.0" prefWidth="274.0" text="MaxMemory" />
+               </AnchorPane>
+           </Tab>
+       </TabPane>
+   </AnchorPane>
+</VBox>
