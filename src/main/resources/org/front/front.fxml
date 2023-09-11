@@ -3,6 +3,7 @@
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.front.AppController">
     <padding>
@@ -13,16 +14,21 @@
          <Insets />
       </VBox.margin>
        <TabPane prefHeight="279.0" prefWidth="418.0" tabClosingPolicy="UNAVAILABLE">
-           <Tab text="Home">
+           <Tab text="启动">
                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                   <TextField fx:id="UserName" layoutX="58.0" layoutY="8.0" prefWidth="274.0" text="UserName" />
-               <Button layoutX="70.0" layoutY="126.0" onAction="#onHelloButtonClick" prefHeight="98.0" prefWidth="247.0" text="Start" />
-                   <TextField layoutX="58.0" layoutY="46.0" prefWidth="274.0" text="PassWord" />
-                   <TextField fx:id="Version" layoutX="58.0" layoutY="84.0" prefWidth="274.0" text="Version" />
-               <PasswordField fx:id="PassWord" layoutX="58.0" layoutY="46.0" prefWidth="274.0" />
+                   <TextField fx:id="UserName" layoutX="68.0" layoutY="8.0" prefWidth="274.0" text="UserName" />
+                   <Label layoutX="24.0" layoutY="12.0" text="用户名" />
+                   <Label layoutX="28.0" layoutY="48.0" text="密码" />
+               <Label layoutX="28.0" layoutY="88.0" text="版本号/配置文件" />
+               <Button layoutX="80.0" layoutY="126.0" onAction="#onHelloButtonClick" prefHeight="98.0" prefWidth="247.0" text="开始游戏">
+                  <font>
+                     <Font size="36.0" />
+                  </font></Button>
+                   <TextField fx:id="Version" layoutX="133.0" layoutY="84.0" prefHeight="23.0" prefWidth="209.0" text="Version" />
+               <PasswordField fx:id="PassWord" layoutX="68.0" layoutY="46.0" prefWidth="274.0" />
                </AnchorPane>
            </Tab>
-           <Tab text="Settings">
+           <Tab text="设置">
                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                    <TextField fx:id="Height" layoutY="80.0" prefWidth="274.0" text="Height" />
                    <TextField fx:id="Width" layoutY="52.0" prefWidth="274.0" text="Width" />
@@ -33,6 +39,15 @@
                    <TextField fx:id="MaxMemory" layoutY="26.0" prefWidth="274.0" text="MaxMemory" />
                </AnchorPane>
            </Tab>
+           <Tab text="下载">
+               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                   <Button layoutX="57.0" layoutY="43.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="115.0" text="下载Minecraft" />
+               <Button layoutX="254.0" layoutY="43.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="115.0" text="下载forge、fabric" />
+               <Button layoutX="57.0" layoutY="125.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="115.0" text="下载整合包" />
+               <Button layoutX="254.0" layoutY="125.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="115.0" text="补全资源文件" />
+               </AnchorPane>
+           </Tab>
        </TabPane>
+      <Button layoutX="392.0" layoutY="3.0" onAction="#onHelpButtonClick" mnemonicParsing="false" text="?" />
    </AnchorPane>
 </VBox>
