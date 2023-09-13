@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.text.Font?>
 
 <VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.front.AppController">
     <padding>
@@ -20,7 +20,7 @@
                    <Label layoutX="24.0" layoutY="12.0" text="用户名" />
                    <Label layoutX="28.0" layoutY="48.0" text="密码" />
                <Label layoutX="28.0" layoutY="88.0" text="版本号/配置文件" />
-               <Button layoutX="80.0" layoutY="126.0" onAction="#onHelloButtonClick" prefHeight="98.0" prefWidth="247.0" text="开始游戏">
+               <Button layoutX="80.0" layoutY="139.0" onAction="#onHelloButtonClick" prefHeight="85.0" prefWidth="247.0" text="开始游戏">
                   <font>
                      <Font size="36.0" />
                   </font></Button>
@@ -48,6 +48,6 @@
                </AnchorPane>
            </Tab>
        </TabPane>
-      <Button layoutX="392.0" layoutY="3.0" onAction="#onHelpButtonClick" mnemonicParsing="false" text="?" />
+      <Button layoutX="392.0" layoutY="3.0" mnemonicParsing="false" onAction="#onHelpButtonClick" text="?" />
    </AnchorPane>
 </VBox>
