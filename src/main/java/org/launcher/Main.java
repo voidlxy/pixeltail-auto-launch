@@ -1,6 +1,6 @@
 package org.launcher;
 //====================================================================================
-//PIXELTAIL-AutoLaunch
+//PixelTail-AutoLaunch
 //为像素尾巴新人制作的一键启动
 //====================================================================================
 //------------------------------------------------------------------------------------
@@ -43,7 +43,7 @@ public class Main {
         //配置外置服务器
         //----------------------------------------------------------------------------
         AuthenticationService aut = YggdrasilAuthenticationServiceBuilder.create()
-                .apiProvider(new ptapi())//从ptapi类加载外置API
+                .apiProvider(new PixelTailAPI())//从PixelTailAPI类加载外置API
                 .build();//构建外置API供应商
         YggdrasilAuthenticator ygg = new YggdrasilAuthenticator(aut);//实例化API
         ygg.refreshWithPassword(

@@ -1,6 +1,6 @@
 package org.launcher;
 //====================================================================================
-//PIXELTAIL-AutoLaunch-ptapi
+//PixelTail-AutoLaunch-PixelTailAPI
 //为像素尾巴启动器提供外置API
 //====================================================================================
 //------------------------------------------------------------------------------------
@@ -10,9 +10,9 @@ import java.util.UUID;
 import org.to2mbn.jmccc.auth.yggdrasil.core.yggdrasil.YggdrasilAPIProvider;
 import org.to2mbn.jmccc.util.UUIDUtils;
 //------------------------------------------------------------------------------------
-//声明ptapi公共类
+//声明PT_API公共类
 //------------------------------------------------------------------------------------
-public class ptapi implements YggdrasilAPIProvider {
+public class PixelTailAPI implements YggdrasilAPIProvider {
 
     @Override
     public String authenticate() {

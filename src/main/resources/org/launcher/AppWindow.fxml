@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="279.0" prefWidth="418.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.launcher.AppController">
+    <TabPane prefHeight="279.0" prefWidth="418.0" tabClosingPolicy="UNAVAILABLE">
+        <Tab text="启动">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <Label layoutX="24.0" layoutY="12.0" text="用户名" />
+                <TextField fx:id="UserName" layoutX="68.0" layoutY="8.0" prefWidth="274.0" text="UserName" />
+                <Label layoutX="28.0" layoutY="48.0" text="密码" />
+                <PasswordField fx:id="PassWord" layoutX="68.0" layoutY="46.0" prefWidth="274.0" />
+                <Label layoutX="28.0" layoutY="88.0" text="版本号/配置文件" />
+                <TextField fx:id="Version" layoutX="133.0" layoutY="84.0" prefHeight="23.0" prefWidth="209.0" text="Version" />
+                <CheckBox layoutX="28.0" layoutY="115.0" mnemonicParsing="false" text="自动进入服务器" />
+                <Button layoutX="80.0" layoutY="139.0" onAction="#onHelloButtonClick" prefHeight="85.0" prefWidth="247.0" text="开始游戏">
+                    <font>
+                        <Font size="36.0" />
+                    </font></Button>
+            </AnchorPane>
+        </Tab>
+        <Tab onSelectionChanged="#OnSelectionChanged" text="设置">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <Label layoutX="6.0" layoutY="4.0" text="游戏目录" />
+                <TextField fx:id="RootDir" layoutX="60.0" prefWidth="274.0" text="RootDir" />
+                <Label layoutX="6.0" layoutY="30.0" text="游戏内存" />
+                <TextField fx:id="MaxMemory" layoutX="60.0" layoutY="26.0" prefWidth="89.0" text="MaxMemory" />
+                <Label layoutX="153.0" layoutY="30.0" text="MB" />
+                <Label layoutX="6.0" layoutY="56.0" text="窗口尺寸" />
+                <RadioButton fx:id="defaultSize" layoutX="61.0" layoutY="56.0" mnemonicParsing="false" onAction="#OnDefaultSizeSelected" selected="true" text="默认" />
+                <RadioButton fx:id="costumeSize" layoutX="115.0" layoutY="56.0" mnemonicParsing="false" onAction="#OnCostumeSizeSelected" text="自定义" />
+                <TextField fx:id="Width" disable="true" layoutX="180.0" layoutY="52.0" prefWidth="89.0" text="854" />
+                <Label layoutX="270.0" layoutY="56.0" text="×" />
+                <TextField fx:id="Height" disable="true" layoutX="280.0" layoutY="52.0" prefWidth="89.0" text="480" />
+                <Label layoutX="6.0" layoutY="82.0" text="Java目录" />
+                <TextField fx:id="JreDir" layoutX="60.0" layoutY="78.0" prefWidth="274.0" text="JreDir" />
+                <Label layoutX="6.0" layoutY="109.0" text="版本隔离" />
+                <TextField fx:id="McRuntimeDir" layoutY="135.0" prefWidth="274.0" text="McRuntimeDir" />
+                <TextField fx:id="JavaAgent" layoutY="163.0" prefWidth="274.0" text="JavaAgent" />
+            </AnchorPane>
+        </Tab>
+        <Tab text="下载">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <Button layoutX="57.0" layoutY="43.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="115.0" text="下载Minecraft" />
+                <Button layoutX="254.0" layoutY="43.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="115.0" text="下载forge、fabric" />
+                <Button layoutX="57.0" layoutY="125.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="115.0" text="下载整合包" />
+                <Button layoutX="254.0" layoutY="125.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="115.0" text="补全资源文件" />
+            </AnchorPane>
+        </Tab>
+    </TabPane>
+    <Button layoutX="392.0" layoutY="3.0" mnemonicParsing="false" onAction="#onHelpButtonClick" text="?" />
+</AnchorPane>

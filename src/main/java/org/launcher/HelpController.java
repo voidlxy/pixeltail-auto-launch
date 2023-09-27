@@ -1,4 +1,4 @@
-package org.front;
+package org.launcher;
 
 public class HelpController {
 }

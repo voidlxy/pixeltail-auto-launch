@@ -1,6 +1,6 @@
-package org.front;
+package org.launcher;
 //====================================================================================
-//PIXELTAIL-AutoLaunch-App
+//PixelTail-AutoLaunch-App
 //为像素尾巴启动器提供前端
 //====================================================================================
 //------------------------------------------------------------------------------------
@@ -24,14 +24,14 @@ public class App extends Application {
         //配置窗口控件
         //----------------------------------------------------------------------------
         //配置fxml加载器并从front.xml加载控件布局
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("front.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("AppWindow.fxml"));
         //创建场景并加入布局
         Scene scene = new Scene(fxmlLoader.load(), 418, 279);
         //----------------------------------------------------------------------------
         //配置窗口设置
         //----------------------------------------------------------------------------
         //设置标题
-        stage.setTitle("PIXELTAIL一键启动");
+        stage.setTitle("PixelTail一键启动");
         //设置场景
         stage.setScene(scene);
         //----------------------------------------------------------------------------
